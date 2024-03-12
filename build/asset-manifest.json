@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/linnad/static/css/main.532c4685.css",
+    "main.js": "/linnad/static/js/main.0de74b4c.js",
+    "static/js/453.956e50d1.chunk.js": "/linnad/static/js/453.956e50d1.chunk.js",
+    "static/media/berlin.jpg": "/linnad/static/media/berlin.c6fd7467148a9abc2e28.jpg",
+    "static/media/paris.jpg": "/linnad/static/media/paris.9ac43b2a084cf9989bcb.jpg",
+    "static/media/london.jpg": "/linnad/static/media/london.0f035f43f5319f6bf33a.jpg",
+    "index.html": "/linnad/index.html",
+    "main.532c4685.css.map": "/linnad/static/css/main.532c4685.css.map",
+    "main.0de74b4c.js.map": "/linnad/static/js/main.0de74b4c.js.map",
+    "453.956e50d1.chunk.js.map": "/linnad/static/js/453.956e50d1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.532c4685.css",
+    "static/js/main.0de74b4c.js"
+  ]
+}
