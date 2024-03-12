@@ -1,14 +1,18 @@
-function LinnadeLoetelu(props) {
-const linnaNimed = props.linnad.map((linn) => {
-    return (
-        <div>{linn.nimi}</div>
-    )
+function LinnadeLoetelu({linnad, setAktiivneLinn}) {
+    const valiLinn = (linnaIndex) => {
+        console.log('linn' + linnaIndex)
+        setAktiivneLinn(linnaIndex)
+    }
 
+    const linnaNimed = linnad.map((linn, index) => {
+        return (
+            <li key={index} onClick={()=>valiLinn(index)}>{linn.nimi} - {linn.kylastusi}</li>
+    )
 })
 
     return (
         <div>
-            <h>Linnade loetelu</h>
+            <p>Linnade loetelu</p>
             <ul>{linnaNimed}</ul>        
         </div>
     )
