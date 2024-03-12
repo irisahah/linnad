@@ -1,8 +1,8 @@
 function Linn(props) {
-    let riik=props.riik
+    let riik = props.riik
     if (!riik) {
-        riik='Teadmata'
-    } 
+        riik = 'Teadmata'
+    }
 
     return (
         <div>
