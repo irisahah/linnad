@@ -1,22 +1,19 @@
-import '/linnad.css';
+import './linnad.css';
 import Linn from './Linn';
+import parisPilt from './pildid/paris.jpg';
 import londonPilt from './pildid/london.jpg';
-import pariisPilt from './pildid/pariis.jpg';
+import berlinPilt from './pildid/berlin.jpg'
 
-const linnad = [
-  pariis,
-  {nimi: 'London, riik: 'Inglismaa', pilt: londonPilt};
 
-]
 
 
 function App() {
   return (
     <div className="container">
       <h1>Minu lemmiklinnad</h1>
-      <Linn name="Pariis" riik="Prantsusmaa" />
-      <Linn name="London" riik="Inglismaa" />
-      <Linn name="Elva" riik="Eesti" />
+      <Linn name="Pariis" riik="Prantsusmaa" pilt={parisPilt} />
+      <Linn name="London" riik="Inglismaa" pilt={londonPilt} />
+      <Linn name="Berliin" riik="Saksamaa" pilt={berlinPilt} />
     </div>
   )
 }

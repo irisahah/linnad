@@ -2,7 +2,7 @@ function Linn(props) {
     let riik=props.riik
     if (!riik) {
         riik='Teadmata'
-    }
+    } 
 
     return (
         <div>
