@@ -1,15 +1,115 @@
-.container {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-}
-
-.container div {
-    padding: 1rem;
-}
-
-.linn-img {
-    width: 300px;
-}
-
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
+  
+  /* Container styles */
+  .container {
+    width: 80%; /* Adjust width as needed */
+    margin: 50px auto; /* Center container vertically */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Keep columns separate vertically */
+  }
+  
+  /* Left column styles */
+  .container .left-column {
+    flex: 1; /* Take up remaining space */
+    padding: 20px;
+  }
+  
+  /* Right column styles */
+  .container .right-column {
+    flex: 1; /* Take up remaining space */
+    padding: 20px;
+    overflow-y: auto; /* Add vertical scrollbar if needed */
+  }
+  
+  /* Column title styles */
+  .column-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Image container styles */
+  .linn-img-container {
+    width: 200px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    border-radius: 8px;
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  /* Image styles */
+  .linn-img {
+    width: 100%; /* Take up full width of container */
+    height: auto; /* Take up full height of container */
+    object-fit: cover; /* Cover the entire container with the image */
+  }
+  
+  /* City list styles */
+  .container ul {
+    list-style-type: none;
+  }
+  
+  .container ul li {
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer; /* Add cursor pointer */
+    transition: background-color 0.3s ease; /* Add transition effect */
+  }
+  
+  .container ul li:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+  }
+  
+  .container ul li:last-child {
+    border-bottom: none; /* Remove border from last item */
+  }
+  
+  /* Button styles */
+  .container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Button label styles */
+  .container button::before,
+  .container button::after {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    transform: rotate(-45deg);
+    margin: 4px;
+  }
+  
+  .container button::before {
+    margin-left: -2px;
+  }
+  
+  .container button::after {
+    margin-right: -2px;
+  }
+  
