@@ -17,9 +17,10 @@ function Linn({riik, name, pilt, kylastusi, setKylastusi}) {
         <div>
             <h3>{name}, {riik}</h3>
             <div><img src={pilt} className="linn-img" /></div>
-            <button onClick={vahenda}>-</button>
+            <button className="buttonPlus" onClick={suurenda}>+</button>
             {kylastusi}
-            <button onClick={suurenda}>+</button>
+            <button className="buttonMinus" onClick={vahenda}>-</button>
+
         </div>
     )
 }
